@@ -1,0 +1,69 @@
+body {
+    background: rgb(44, 44, 79);
+    margin: 0;
+}
+
+.tiles {
+	margin: 48px auto;
+	width: max-content;
+	display: grid;
+	grid-template-columns: repeat(4, 100px);
+	gap: 16px;
+	box-sizing: border-box;
+}
+
+.tile {
+	height: 100px;
+	background: #111111;
+	border: 5px solid #444444;
+	cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+    background-color: rgb(44,44,79); /*set header background color*/
+    color: white; /*set header text color*/
+    padding: 0.5rem 0; 
+    text-align: center; 
+    border-bottom: 0.7px solid lightgrey;
+}
+
+.header-content {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+h1 {
+    font-family: sans-serif; /*change font*/
+    font-weight: bold; /*bold text*/
+}
+
+p {
+    font-family: sans-serif; /*change font*/
+    margin-top: 10px; /* Add space between title and developer name */
+}
+
+a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline from link */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline link on hover */
+}
+
+/* FOOTER SECTION */
+  
+footer {
+    height: 26vh;
+    margin: 0 1rem; 
+}
+  
+footer p {
+    text-align: center; /*Align in center*/
+    font-family: sans-serif; /*change font*/
+    color: white; /* Footer color words = white*/
+}
+
+
