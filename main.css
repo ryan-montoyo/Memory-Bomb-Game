@@ -67,3 +67,32 @@ footer p {
 }
 
 
+/* Media query for mobile devices */
+@media screen and (max-width: 576px) {
+    /* Override styles for mobile devices */
+    .tiles {
+        padding-top: 10vh;
+        padding-bottom: 20vh;
+        margin: 12px auto;
+        width: 90vw;
+        grid-template-columns: repeat(4, minmax(80px, 1fr));
+        gap: 8px;
+    }
+
+    .tile {
+        height: 80px;
+    }
+
+    header .header-content {
+        max-width: 90%;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        margin-top: 6px;
+    }
+
+}

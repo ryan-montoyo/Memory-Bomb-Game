@@ -2,22 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Match</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
     <script src="main.js" defer></script>
+    <style>
+        /* CSS for rainbow-colored text */
+        .rainbow-letter {
+            display: inline-block;
+            animation: rainbow 5s linear infinite alternate; /* Animate colors */
+        }
+
+        /* Define colors for each letter */
+        @keyframes rainbow {
+            0% { color: violet; }
+            10% { color: indigo; }
+            20% { color: blue; }
+            30% { color: green; }
+            40% { color: yellow; }
+            50% { color: orange; }
+            60% { color: red; }
+            70% { color: violet; }
+            80% { color: indigo; }
+            90% { color: blue; }
+            100% { color: green; }
+        }
+        header h1 {
+            font-family: sans-serif; /*change font*/
+            font-weight: bold; /*bold text*/
+            font-size: 3vh;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <h1>Memory Match</h1>
+            <h1>
+                <span class="rainbow-letter">M</span>
+                <span class="rainbow-letter">e</span>
+                <span class="rainbow-letter">m</span>
+                <span class="rainbow-letter">o</span>
+                <span class="rainbow-letter">r</span>
+                <span class="rainbow-letter">y</span>
+                <span class="rainbow-letter"> </span>
+                <span class="rainbow-letter">M</span>
+                <span class="rainbow-letter">a</span>
+                <span class="rainbow-letter">t</span>
+                <span class="rainbow-letter">c</span>
+                <span class="rainbow-letter">h</span>
+            </h1>
             <p>Developed by <a href="https://montoyo.dev" target="_blank">Ryan Montoyo</a></p>
         </div>
     </header>
     <div class="tiles"></div>
+    <footer>
+        <p>Copyright &#169; 2024 Ryan Montoyo. All Rights Reserved.</p>
+    </footer>
 </body>
-<footer>
-    <p>Copyright &#169; 2024 Ryan Montoyo. All Rights Reserved.</p>
-</footer>
 </html>
